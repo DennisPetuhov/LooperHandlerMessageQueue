@@ -57,7 +57,7 @@ class MainActivity : ComponentActivity() {
 
     private fun workThreadExecute() {
         workerThread.execute {
-            Thread.sleep(3000)
+            Thread.sleep(300)
             handler.sendMessage(createMessage("Task $counter completed"))
             counter++
         }
